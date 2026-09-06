@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>सेंट टेरेसा स्कूल | कक्षा 1 से 5 तक गुणवत्तापूर्ण शिक्षा</title>
+
+    <meta
+            name="description"
+            content="सेंट टेरेसा स्कूल, गोड्डा - कक्षा 1 से 5 तक गुणवत्तापूर्ण शिक्षा, व्यक्तिगत ध्यान, हॉस्टल सुविधा और जवाहर नवोदय विद्यालय की फाउंडेशन तैयारी।"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+    >
+    <style>
+        /* =========================
+   RESET
+========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Noto Sans Devanagari", sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            height: 78px;
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-mark {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #183b56;
+            color: #ffffff;
+            display: grid;
+            place-items: center;
+            font-weight: 800;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+        }
+
+        .logo-text strong {
+            font-size: 17px;
+        }
+
+        .logo-text span {
+            font-size: 11px;
+            color: #777;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-menu a {
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #d39b32;
+        }
+
+        .nav-btn {
+            background: #d39b32;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 680px;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            background:
+                    linear-gradient(
+                            90deg,
+                            rgba(10, 29, 43, 0.94),
+                            rgba(10, 29, 43, 0.68),
+                            rgba(10, 29, 43, 0.30)
+                    ),
+                    url("images/school.jpg") center/cover no-repeat;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text {
+            max-width: 700px;
+            color: #ffffff;
+        }
+
+        .eyebrow,
+        .section-label {
+            display: inline-block;
+            color: #d39b32;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1.2;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span,
+        h2 span {
+            color: #d39b32;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 18px;
+            color: #eeeeee;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 23px;
+            border-radius: 7px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #d39b32;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,0.6);
+            color: #ffffff;
+        }
+
+        .btn-outline:hover {
+            background: #ffffff;
+            color: #172033;
+        }
+
+        .hero-trust {
+            display: flex;
+            gap: 40px;
+            margin-top: 55px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.25);
+        }
+
+        .hero-trust div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-trust strong {
+            font-size: 20px;
+        }
+
+        .hero-trust span {
+            font-size: 12px;
+            color: #cccccc;
+        }
+
+
+        /* =========================
+           INTRO
+        ========================= */
+
+        .intro {
+            padding: 60px 0;
+            background: #f7f8f6;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .intro h2 {
+            font-size: 38px;
+            line-height: 1.3;
+        }
+
+        .intro p {
+            color: #596273;
+        }
+
+
+        /* =========================
+           GENERAL SECTION
+        ========================= */
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-heading {
+            max-width: 650px;
+            margin: 0 auto 55px;
+            text-align: center;
+        }
+
+        .section-heading h2,
+        .about-content h2,
+        .hostel-content h2,
+        .jnv-content h2,
+        .contact h2 {
+            font-size: 42px;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        .section-heading p {
+            color: #667085;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .image-placeholder {
+            min-height: 450px;
+            background: #e9ece8;
+            display: grid;
+            place-items: center;
+            color: #7b817a;
+            border-radius: 12px;
+        }
+
+        .about-content > p {
+            color: #626b78;
+            margin-bottom: 16px;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature span {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #edf4ec;
+            color: #48704b;
+            display: grid;
+            place-items: center;
+            font-weight: 800;
+        }
+
+        .feature p {
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           WHY US
+        ========================= */
+
+        .why-us {
+            background: #f7f8f6;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 32px;
+            border: 1px solid #e7e9e5;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+        }
+
+        .card-icon {
+            color: #d39b32;
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #697281;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           JNV
+        ========================= */
+
+        .jnv {
+            background: #183b56;
+            color: #ffffff;
+        }
+
+        .jnv-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .jnv-content h2 {
+            margin-bottom: 20px;
+        }
+
+        .jnv-content p {
+            color: #d3dbe0;
+            margin-bottom: 30px;
+        }
+
+        .jnv-points {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .jnv-points div {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 15px;
+        }
+
+        .jnv-points strong {
+            display: block;
+            color: #d39b32;
+            margin-bottom: 3px;
+        }
+
+        .jnv-points span {
+            font-size: 13px;
+            color: #c6d0d6;
+        }
+
+        .jnv-box {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 15px;
+            padding: 50px 35px;
+            text-align: center;
+        }
+
+        .jnv-number {
+            font-size: 70px;
+            font-weight: 800;
+            color: #d39b32;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .jnv-box h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .jnv-box p {
+            color: #c6d0d6;
+        }
+
+
+        /* =========================
+           CLASSES
+        ========================= */
+
+        .class-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .class-box {
+            padding: 35px 20px;
+            background: #f7f8f6;
+            border: 1px solid #e7e9e5;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .class-box strong {
+            display: block;
+            color: #d39b32;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .class-box span {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+
+        /* =========================
+           HOSTEL
+        ========================= */
+
+        .hostel {
+            background: #f7f8f6;
+        }
+
+        .hostel-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hostel-content p {
+            color: #667085;
+            margin-bottom: 25px;
+        }
+
+        .hostel-content ul {
+            list-style: none;
+        }
+
+        .hostel-content li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .hostel-content li::before {
+            content: "✓";
+            color: #d39b32;
+            font-weight: 800;
+            margin-right: 10px;
+        }
+
+
+        /* =========================
+           GALLERY
+        ========================= */
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-auto-rows: 220px;
+            gap: 15px;
+        }
+
+        .gallery-item {
+            background: #dfe4df;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gallery-item.large {
+            grid-row: span 2;
+        }
+
+        .gallery-item span {
+            background: rgba(0,0,0,0.55);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+
+        /* =========================
+           REVIEWS
+        ========================= */
+
+        .reviews {
+            background: #ffffff;
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .review {
+            padding: 30px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+        }
+
+        .stars {
+            color: #d39b32;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+        }
+
+        .review p {
+            color: #596273;
+            margin-bottom: 20px;
+        }
+
+        .review strong {
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           ADMISSION
+        ========================= */
+
+        .admission {
+            padding: 100px 0;
+            background: #d39b32;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .admission h2 {
+            max-width: 750px;
+            margin: 0 auto 15px;
+            font-size: 44px;
+            line-height: 1.3;
+        }
+
+        .admission h2 span {
+            color: #183b56;
+        }
+
+        .admission p {
+            margin-bottom: 30px;
+        }
+
+        .admission-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-light {
+            background: #ffffff;
+            color: #183b56;
+        }
+
+        .btn-whatsapp {
+            background: #183b56;
+            color: #ffffff;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            align-items: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+        }
+
+        .contact-item > span {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #f2f4ef;
+            display: grid;
+            place-items: center;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .contact-item p {
+            color: #667085;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .footer {
+            background: #102a3d;
+            color: #ffffff;
+            padding-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 60px;
+            padding-bottom: 50px;
+        }
+
+        .footer h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer h4 {
+            color: #d39b32;
+            margin-bottom: 15px;
+        }
+
+        .footer p,
+        .footer span,
+        .footer a {
+            color: #bdc8cf;
+            font-size: 14px;
+        }
+
+        .footer a,
+        .footer span {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.12);
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .nav-menu {
+                display: none;
+            }
+
+            .hero {
+                min-height: 620px;
+            }
+
+            .intro-grid,
+            .about-grid,
+            .jnv-grid,
+            .hostel-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .class-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .gallery-item.large {
+                grid-row: span 1;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .header {
+                height: 70px;
+            }
+
+            .nav-btn {
+                display: none;
+            }
+
+            .hero {
+                min-height: 650px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero-trust {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .section {
+                padding: 70px 0;
+            }
+
+            .section-heading h2,
+            .about-content h2,
+            .hostel-content h2,
+            .jnv-content h2,
+            .contact h2,
+            .admission h2 {
+                font-size: 32px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+
+            .jnv-points {
+                grid-template-columns: 1fr;
+            }
+
+            .class-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item {
+                min-height: 200px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .logo-text strong {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+    <div class="container nav">
+
+        <a href="#home" class="logo">
+            <div class="logo-mark">ST</div>
+
+            <div class="logo-text">
+                <strong>सेंट टेरेसा स्कूल</strong>
+                <span>गोड्डा, झारखंड</span>
+            </div>
+        </a>
+
+        <nav class="nav-menu">
+            <a href="#home">होम</a>
+            <a href="#about">हमारे बारे में</a>
+            <a href="#jnv">JNV तैयारी</a>
+            <a href="#admission">प्रवेश</a>
+            <a href="#gallery">गैलरी</a>
+            <a href="#contact">संपर्क</a>
+        </nav>
+
+        <a href="#admission" class="nav-btn">
+            प्रवेश लें
+        </a>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+            <span class="eyebrow">
+                कक्षा 1 से 5 तक प्रवेश प्रारंभ
+            </span>
+
+                <h1>
+                    बच्चों के उज्ज्वल भविष्य की
+                    <span>मजबूत नींव</span>
+                </h1>
+
+                <p>
+                    गुणवत्तापूर्ण शिक्षा, व्यक्तिगत ध्यान, अनुशासन
+                    और जवाहर नवोदय विद्यालय की तैयारी के लिए
+                    एक बेहतर सीखने का वातावरण।
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#admission" class="btn btn-primary">
+                        प्रवेश के लिए संपर्क करें
+                    </a>
+
+                    <a href="#jnv" class="btn btn-outline">
+                        JNV तैयारी जानें
+                    </a>
+                </div>
+
+                <div class="hero-trust">
+
+                    <div>
+                        <strong>कक्षा 1–5</strong>
+                        <span>शिक्षा</span>
+                    </div>
+
+                    <div>
+                        <strong>सीमित</strong>
+                        <span>विद्यार्थी संख्या</span>
+                    </div>
+
+                    <div>
+                        <strong>हॉस्टल</strong>
+                        <span>सुविधा उपलब्ध</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="intro">
+
+        <div class="container intro-grid">
+
+            <div>
+                <span class="section-label">हमारी विशेषता</span>
+
+                <h2>
+                    छोटा बैच,
+                    <span>व्यक्तिगत ध्यान</span>
+                </h2>
+            </div>
+
+            <p>
+                हमारा उद्देश्य बच्चों को केवल पाठ्यक्रम पूरा करवाना नहीं,
+                बल्कि उनकी सोचने, समझने और समस्या हल करने की क्षमता
+                को मजबूत बनाना है। सीमित विद्यार्थी संख्या के कारण
+                प्रत्येक बच्चे पर विशेष ध्यान दिया जाता है।
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="section about" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-image">
+                <div class="image-placeholder">
+                    स्कूल परिसर की तस्वीर
+                </div>
+            </div>
+
+            <div class="about-content">
+
+                <span class="section-label">हमारे बारे में</span>
+
+                <h2>
+                    शिक्षा के साथ
+                    <span>संस्कार और आत्मविश्वास</span>
+                </h2>
+
+                <p>
+                    सेंट टेरेसा स्कूल में हम बच्चों को एक सुरक्षित,
+                    अनुशासित और सकारात्मक वातावरण प्रदान करने का
+                    प्रयास करते हैं, जहाँ वे पढ़ाई के साथ-साथ
+                    आत्मविश्वास और अच्छे संस्कार विकसित कर सकें।
+                </p>
+
+                <p>
+                    कक्षा 1 से 5 तक बच्चों की बुनियादी शिक्षा को मजबूत
+                    करने के साथ हम उन्हें भविष्य की प्रतियोगी परीक्षाओं
+                    के लिए धीरे-धीरे तैयार करते हैं।
+                </p>
+
+                <div class="feature-list">
+
+                    <div class="feature">
+                        <span>✓</span>
+                        <p>व्यक्तिगत ध्यान</p>
+                    </div>
+
+                    <div class="feature">
+                        <span>✓</span>
+                        <p>मजबूत शैक्षणिक आधार</p>
+                    </div>
+
+                    <div class="feature">
+                        <span>✓</span>
+                        <p>अनुशासित वातावरण</p>
+                    </div>
+
+                    <div class="feature">
+                        <span>✓</span>
+                        <p>हॉस्टल सुविधा</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY US ================= -->
+
+    <section class="section why-us">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+            <span class="section-label">
+                हमें क्यों चुनें?
+            </span>
+
+                <h2>
+                    आपके बच्चे के लिए
+                    <span>सही शुरुआत</span>
+                </h2>
+
+                <p>
+                    मजबूत नींव ही बेहतर भविष्य की शुरुआत है।
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card">
+                    <div class="card-icon">01</div>
+
+                    <h3>व्यक्तिगत ध्यान</h3>
+
+                    <p>
+                        सीमित विद्यार्थियों के कारण प्रत्येक बच्चे
+                        की सीखने की जरूरतों पर विशेष ध्यान।
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">02</div>
+
+                    <h3>मजबूत आधार</h3>
+
+                    <p>
+                        गणित, भाषा और सामान्य ज्ञान में मजबूत
+                        बुनियादी समझ विकसित करना।
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">03</div>
+
+                    <h3>JNV फाउंडेशन</h3>
+
+                    <p>
+                        मानसिक योग्यता, रीजनिंग और समस्या समाधान
+                        जैसी क्षमताओं पर शुरुआती ध्यान।
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">04</div>
+
+                    <h3>अनुशासन</h3>
+
+                    <p>
+                        पढ़ाई के साथ समय प्रबंधन, अनुशासन और
+                        जिम्मेदारी की आदत विकसित करना।
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">05</div>
+
+                    <h3>हॉस्टल सुविधा</h3>
+
+                    <p>
+                        विद्यार्थियों के लिए सुरक्षित और
+                        व्यवस्थित आवासीय वातावरण।
+                    </p>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">06</div>
+
+                    <h3>नियमित अभ्यास</h3>
+
+                    <p>
+                        नियमित टेस्ट और अभ्यास के माध्यम से
+                        बच्चों की प्रगति को समझना।
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JNV ================= -->
+
+    <section class="section jnv" id="jnv">
+
+        <div class="container jnv-grid">
+
+            <div class="jnv-content">
+
+            <span class="section-label">
+                JNV Foundation Program
+            </span>
+
+                <h2>
+                    JNV की तैयारी की
+                    <span>मजबूत शुरुआत</span>
+                </h2>
+
+                <p>
+                    जवाहर नवोदय विद्यालय चयन परीक्षा के लिए भविष्य में
+                    बेहतर तैयारी के उद्देश्य से हम बच्चों की शुरुआती
+                    कक्षाओं से ही उनकी मूलभूत क्षमताओं को मजबूत करने
+                    पर ध्यान देते हैं।
+                </p>
+
+                <div class="jnv-points">
+
+                    <div>
+                        <strong>गणित</strong>
+                        <span>बुनियादी अवधारणाएँ और गणना कौशल</span>
+                    </div>
+
+                    <div>
+                        <strong>मानसिक योग्यता</strong>
+                        <span>सोचने और समझने की क्षमता</span>
+                    </div>
+
+                    <div>
+                        <strong>रीजनिंग</strong>
+                        <span>तार्किक एवं समस्या समाधान क्षमता</span>
+                    </div>
+
+                    <div>
+                        <strong>भाषा</strong>
+                        <span>पढ़ने, समझने और अभिव्यक्ति का विकास</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="jnv-box">
+
+                <div class="jnv-number">
+                    1–5
+                </div>
+
+                <h3>
+                    फाउंडेशन कक्षाएँ
+                </h3>
+
+                <p>
+                    आज मजबूत आधार बनाइए,
+                    भविष्य के अवसरों के लिए तैयार रहिए।
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CLASSES ================= -->
+
+    <section class="section classes">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+            <span class="section-label">
+                हमारी कक्षाएँ
+            </span>
+
+                <h2>
+                    कक्षा <span>1 से 5</span> तक
+                </h2>
+
+            </div>
+
+
+            <div class="class-grid">
+
+                <div class="class-box">
+                    <strong>01</strong>
+                    <span>कक्षा 1</span>
+                </div>
+
+                <div class="class-box">
+                    <strong>02</strong>
+                    <span>कक्षा 2</span>
+                </div>
+
+                <div class="class-box">
+                    <strong>03</strong>
+                    <span>कक्षा 3</span>
+                </div>
+
+                <div class="class-box">
+                    <strong>04</strong>
+                    <span>कक्षा 4</span>
+                </div>
+
+                <div class="class-box">
+                    <strong>05</strong>
+                    <span>कक्षा 5</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOSTEL ================= -->
+
+    <section class="section hostel">
+
+        <div class="container hostel-grid">
+
+            <div class="hostel-image">
+                <div class="image-placeholder">
+                    हॉस्टल की तस्वीर
+                </div>
+            </div>
+
+            <div class="hostel-content">
+
+            <span class="section-label">
+                आवासीय सुविधा
+            </span>
+
+                <h2>
+                    सुरक्षित और
+                    <span>अनुशासित हॉस्टल</span>
+                </h2>
+
+                <p>
+                    स्कूल परिसर में रहने वाले विद्यार्थियों के लिए
+                    एक व्यवस्थित और सीखने के अनुकूल वातावरण उपलब्ध
+                    कराने का हमारा प्रयास है।
+                </p>
+
+                <ul>
+                    <li>सुरक्षित आवासीय वातावरण</li>
+                    <li>अध्ययन के लिए निर्धारित समय</li>
+                    <li>अनुशासित दैनिक दिनचर्या</li>
+                    <li>पढ़ाई और गतिविधियों का संतुलन</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="section gallery" id="gallery">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+            <span class="section-label">
+                हमारी गैलरी
+            </span>
+
+                <h2>
+                    स्कूल की
+                    <span>एक झलक</span>
+                </h2>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item large">
+                    <span>स्कूल परिसर</span>
+                </div>
+
+                <div class="gallery-item">
+                    <span>कक्षा</span>
+                </div>
+
+                <div class="gallery-item">
+                    <span>हॉस्टल</span>
+                </div>
+
+                <div class="gallery-item">
+                    <span>खेल गतिविधियाँ</span>
+                </div>
+
+                <div class="gallery-item">
+                    <span>छात्र गतिविधियाँ</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section class="section reviews">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+            <span class="section-label">
+                अभिभावकों की राय
+            </span>
+
+                <h2>
+                    माता-पिता
+                    <span>क्या कहते हैं?</span>
+                </h2>
+
+            </div>
+
+
+            <div class="review-grid">
+
+                <article class="review">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "स्कूल में बच्चों पर व्यक्तिगत ध्यान दिया जाता है।
+                        हमारे बच्चे की पढ़ाई और आत्मविश्वास में काफी सुधार हुआ है।"
+                    </p>
+
+                    <strong>— अभिभावक</strong>
+
+                </article>
+
+
+                <article class="review">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "हमें स्कूल का अनुशासन और पढ़ाई का वातावरण
+                        बहुत अच्छा लगा। शिक्षक बच्चों को अच्छी तरह समझते हैं।"
+                    </p>
+
+                    <strong>— अभिभावक</strong>
+
+                </article>
+
+
+                <article class="review">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "JNV की तैयारी के लिए बच्चों को शुरुआती स्तर से
+                        तैयार करना इस स्कूल की अच्छी पहल है।"
+                    </p>
+
+                    <strong>— अभिभावक</strong>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ADMISSION ================= -->
+
+    <section class="admission" id="admission">
+
+        <div class="container admission-content">
+
+        <span class="section-label">
+            प्रवेश 2026–27
+        </span>
+
+            <h2>
+                अपने बच्चे के उज्ज्वल भविष्य की
+                <span>शुरुआत आज करें</span>
+            </h2>
+
+            <p>
+                कक्षा 1 से 5 तक सीमित सीटों के लिए प्रवेश प्रारंभ है।
+            </p>
+
+            <div class="admission-buttons">
+
+                <a href="tel:+919999999999" class="btn btn-light">
+                    📞 अभी कॉल करें
+                </a>
+
+                <a href="https://wa.me/919999999999" class="btn btn-whatsapp">
+                    WhatsApp पर पूछें
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="section contact" id="contact">
+
+        <div class="container contact-grid">
+
+            <div>
+
+            <span class="section-label">
+                संपर्क करें
+            </span>
+
+                <h2>
+                    हमसे
+                    <span>बात करें</span>
+                </h2>
+
+                <p>
+                    प्रवेश, कक्षा, हॉस्टल या JNV तैयारी से संबंधित
+                    किसी भी जानकारी के लिए हमसे संपर्क करें।
+                </p>
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+                    <span>📍</span>
+                    <div>
+                        <strong>पता</strong>
+                        <p>
+                            सेंट टेरेसा स्कूल,<br>
+                            गोड्डा, झारखंड
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>📞</span>
+                    <div>
+                        <strong>फोन</strong>
+                        <p>+91 99999 99999</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>✉</span>
+                    <div>
+                        <strong>ईमेल</strong>
+                        <p>info@stteresaschool.in</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>सेंट टेरेसा स्कूल</h3>
+
+            <p>
+                बच्चों के उज्ज्वल भविष्य की मजबूत नींव।
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>त्वरित लिंक</h4>
+
+            <a href="#about">हमारे बारे में</a>
+            <a href="#jnv">JNV तैयारी</a>
+            <a href="#admission">प्रवेश</a>
+            <a href="#gallery">गैलरी</a>
+            <a href="#contact">संपर्क</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>कक्षाएँ</h4>
+
+            <span>कक्षा 1</span>
+            <span>कक्षा 2</span>
+            <span>कक्षा 3</span>
+            <span>कक्षा 4</span>
+            <span>कक्षा 5</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 सेंट टेरेसा स्कूल, गोड्डा। सर्वाधिकार सुरक्षित।
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
